@@ -222,11 +222,12 @@ def user_stats(df):
     
 
 def part(df):
-    
+    #This function returns the next 5 rows on the request of the user
     start = 0
     end = 5
     
-    while input('Enter Y for Yes to view some part of the dataset.\nIf not interested, press any key to continue\n').lower().strip() == 'y':
+    df_lenght = len(df)
+    while input('Enter Y for Yes to view some part of the dataset.\nIf not interested, press any key to continue\n').lower().strip() == 'y' and end < df_lenght :
         print(df.iloc[start:end,:])
         start +=5
         end+=5
@@ -238,7 +239,7 @@ def part(df):
 def main():
     while True:
         city, month, day = get_filters()
-        
+        #The if block ends allows code to end without breaking if user decides to end program at first stage
         if city in CITY_DATA and month in Available_months and day in Available_day_of_week:
             
         
