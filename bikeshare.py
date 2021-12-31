@@ -239,7 +239,7 @@ def part(df):
 def main():
     while True:
         city, month, day = get_filters()
-        
+        #The if block ends allows code to end without breaking if user decides to end program at first stage
         if city in CITY_DATA and month in Available_months and day in Available_day_of_week:
             
         
