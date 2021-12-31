@@ -222,7 +222,7 @@ def user_stats(df):
     
 
 def part(df):
-    
+    #This function returns the next 5 rows on the request of the user
     start = 0
     end = 5
     
