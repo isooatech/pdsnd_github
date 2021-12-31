@@ -226,7 +226,8 @@ def part(df):
     start = 0
     end = 5
     
-    while input('Enter Y for Yes to view some part of the dataset.\nIf not interested, press any key to continue\n').lower().strip() == 'y':
+    df_lenght = len(df)
+    while input('Enter Y for Yes to view some part of the dataset.\nIf not interested, press any key to continue\n').lower().strip() == 'y' and end < df_lenght :
         print(df.iloc[start:end,:])
         start +=5
         end+=5
