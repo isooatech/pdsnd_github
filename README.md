@@ -13,5 +13,5 @@ In this project, you will make use of Python to explore data related to bike sha
 washington.csv, chicago.csv, new_york_city.csv, bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+No links consulted. Udacity resource was sufficient to execute project
 
